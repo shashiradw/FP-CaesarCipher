@@ -9,11 +9,12 @@ object CaesarCipher {
      //READ WORD
      print("Enter the Word >")
      var word=readLine()
-
+     //Shifted key ?
+     print("Enter Shifted key >")
+     var shift=readInt()
      //ASK E OR D
      print("Enter E-Encrypt or D-Decrypy >")
      val flag:Char=readChar().toUpper
-     val shift:Int=3
 
      val E =(c:Char,shift:Int,a:String)=> a((a.indexOf(c.toUpper)+shift)%26)
 
